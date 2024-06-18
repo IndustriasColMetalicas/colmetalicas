@@ -1,0 +1,60 @@
+<div class="grid-container">
+  <section>
+    <div class="container-top">
+      <div class="top-text">
+        <h1 class="mat-h1 tittle-home">{{titleTop}}</h1>
+        <p class="text-home">{{text1Top}}</p>
+        <p class="text-home">{{text2Top}}</p>
+      </div>
+      <div class="top-image">
+        <img src="/assets/img/page/3.png" alt="" class="img-top">
+      </div>
+    </div>
+    <div class="container-bg">
+      <div class="container-middle">
+        <div class="middle-image">
+          <swiper-container
+          navigation="false"
+          pagination="true"
+          pagination-clickable="true"
+          space-between="30"
+          centered-slides="true"
+          autoplay-delay="2500"
+          autoplay-disable-on-interaction="false"
+          effect="fade"
+          centeredSlides="true"
+          slidesPerView="auto"
+          >
+          <swiper-slide>
+            <img src="/assets/img/page/4.png" alt="" class="img-top" >
+          </swiper-slide>
+          <swiper-slide>
+            <img src="/assets/img/page/11.png" alt="" class="img-top">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="/assets/img/page/14.png" alt="" class="img-top">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="/assets/img/page/15.png" alt="" class="img-top">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="/assets/img/page/23.png" alt="" class="img-top">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="/assets/img/page/24.png" alt="" class="img-top">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="/assets/img/page/20.png" alt="" class="img-top">
+          </swiper-slide>
+          </swiper-container>
+        </div>
+        <div class="middle-text">
+          <h2 class="mat-h2 tittle-home">{{tittleMiddle}}</h2>
+          <p class="text-home"><mat-icon class="middle-icon">check</mat-icon>{{text1Middle}}</p>
+          <p class="text-home"><mat-icon class="middle-icon">check</mat-icon>{{text2Middle}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-whatsapp-button></app-whatsapp-button>
+</div>

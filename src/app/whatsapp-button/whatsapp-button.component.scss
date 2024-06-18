@@ -1,0 +1,76 @@
+.IconoWhatsApp{
+  height: auto;
+}
+img.whatsapp {
+  display: none;
+  position: fixed;
+  width: 3%;
+  bottom: 42px;
+  left: 42px;
+  color: #fff;
+  background: #25d366;
+  border: 13px solid #25d366;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 100;
+  overflow: hidden;
+  overflow-clip-margin: border-box;
+}
+#appear.active{
+  display:inline;
+}
+a{
+  position: relative;
+}
+a p {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+a p::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+}
+a:hover p {
+  visibility: visible;
+  position: fixed;
+  bottom: 42px;
+  left: 176px;
+  color: black;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: white;
+  border-radius: 63px;
+  font-size: 16px;
+  padding: 6px;
+  z-index: 100;
+  opacity: 1;
+  box-shadow: 0 12px 24px -2px #00000029;
+  outline: 2px solid #000;
+}
+
+@media only screen and (max-width: 999px) {
+  img.whatsapp {
+    width: 8%;
+    bottom: 15px;
+    left: 15px;
+  }
+  a:hover p {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,89 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+.maps-container{
+  height: 290px;
+}
+
+.form-container{
+  height: 480px;
+}
+
+h1.mat-h1 {
+  padding-left: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 5px 0;
+}
+ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: medium;
+}
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.contact-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.contact-container {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.desktop{
+  display: block;
+}
+
+.mobile{
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
+
+  .grid-container {
+    margin: 20px 0px;
+  }
+
+  .maps-container{
+    height: 330px;
+  }
+
+}
